@@ -1,4 +1,4 @@
-# MarketplaceNFTs
+# MarketplaceNFT
 
 This repository contains the code for a Single Page Application (SPA) that functions as a marketplace for non-fungible tokens (NFTs). Users can authenticate themselves using an Ethereum wallet, buy and sell NFTs, and mint new ones. Transactions are managed using smart contracts.
 
