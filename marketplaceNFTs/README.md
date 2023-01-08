@@ -1,6 +1,12 @@
 # MarketplaceNFTs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+This repository contains the code for a Single Page Application (SPA) that functions as a marketplace for non-fungible tokens (NFTs). Users can authenticate themselves using an Ethereum wallet, buy and sell NFTs, and mint new ones. Transactions are managed using smart contracts.
+
+The application has a hybrid architecture, with a NoSQL Mongodb database storing general information and smart contracts handling NFT transactions.
+
+To get started with this project, you will need to set up a development environment with the necessary tools and dependencies. This may include a package manager like npm, a code editor like Visual Studio Code, and a local blockchain network like Ganache.
+
+Once your development environment is set up, you can clone this repository and begin working on the features described above. You can also check out the issues page to see what features are currently being worked on or to report any bugs you may find.
 
 ## Development server
 
