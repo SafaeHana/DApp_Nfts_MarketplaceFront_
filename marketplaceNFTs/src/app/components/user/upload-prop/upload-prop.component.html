@@ -11,8 +11,8 @@
       <div class="row">
           <div class="col-lg-8 mx-auto">
               <div class="section-head-sm">
-                  <a routerLink="" class="btn-link fw-semibold"><em class="ni ni-arrow-left"></em> Manage collectible type </a>
-                  <h1 class="mt-2">Create Your Listing</h1>
+                  <a routerLink="" class="btn-link fw-semibold"><em class="ni ni-arrow-left"></em> Manage  </a>
+                  <h1 class="mt-2">Create Your Nft</h1>
               </div><!-- end section-head -->
 
               <form
@@ -38,7 +38,7 @@
                           >
                       </div>
                       <span class="item-detail-text-meta text-danger mt-0" *ngIf="images.errors && f.submitted">
-                        Please upload at least one image
+                        Please upload an image
                       </span>
                   </div><!-- end form-item -->
 
@@ -46,7 +46,7 @@
 
                   <div class="form-item mb-2">
                     <h5 class="mb-3">Upload Legal Documents</h5>
-                    <span class="item-detail-text-meta mt-0" >Make sure to add all legal documents to get your listing approved</span>
+                    <span class="item-detail-text-meta mt-0" >Make sure to add  legal document to get your Nft approved</span>
                     <div class="file-upload-wrap">
                         <p class="file-name mb-4" id="file-name">PDF. Max 100mb.</p>
                         <input id="file-upload"  type="file"
@@ -91,7 +91,7 @@
 
 
                   <div class="form-item mb-4">
-                      <h5 class="mb-1">Listing Category</h5>
+                      <h5 class="mb-1">Nft Category</h5>
                       <div class="form-choice-wrap">
                           <select class="form-choice" (change)="changeCat($event)">
                               <option selected value="0">Select your Category</option>
@@ -133,7 +133,7 @@
 
                       <div class="mb-3">
                         <label class="mb-2 form-label">Description</label><br>
-                        <span class="item-detail-text-meta">Please Include All information to get your listing Approved</span>
+                        <span class="item-detail-text-meta">Please Include All information to get your Nft Approved</span>
                           <textarea
                           name="desc"
                           [(ngModel)]="product.desc"

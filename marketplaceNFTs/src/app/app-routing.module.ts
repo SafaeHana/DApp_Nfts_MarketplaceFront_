@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AnnoncesComponent } from './components/explore/annonces/annonces.component';
+import { AnnoncesComponent } from './components/explore/explore.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { RegisterComponent } from './components/user/register/register.component';
 import { LoginComponent } from './components/user/login/login.component';
@@ -19,14 +19,10 @@ const routes: Routes = [
 
   //paths
   {path:'home',component:HomepageComponent},
-  {path:'uploadprop',component:UploadPropComponent,canActivate:[AuthGuard]},
+  {path:'uploadprop',component:UploadPropComponent},
   {path:'explore',component:AnnoncesComponent},
-  {path:'register',component:RegisterComponent,canActivate:[NAuthGuard]},
-  {path:'login',component:LoginComponent,canActivate:[NAuthGuard]},
-  {path:'dashboard',component:DashboardComponent,canActivate:[AuthGuard]},
+  {path:'dashboard',component:DashboardComponent},
   {path:'productdetails/:id',component:ProductDetailsComponent},
-  {path:'profile/:id',component:PublicProfileComponent},
-  {path:'admin',component:AdminComponent,canActivate:[RoleGuard]},
   {path:'faq',component:FaqComponent},
   {path:'aboutus',component:AboutusComponent},
 

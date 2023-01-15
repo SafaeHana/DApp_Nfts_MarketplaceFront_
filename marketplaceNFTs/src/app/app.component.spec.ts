@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'marketplaceNFTs'`, () => {
+  it(`should have as title 'angularDapp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('marketplaceNFTs');
+    expect(app.title).toEqual('angularDapp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('marketplaceNFTs app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angularDapp app is running!');
   });
 });
